@@ -23,3 +23,34 @@
 
 'use strict';
 
+const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {
+
+        'film1': 'ocenka1',
+        'film2': 'ocenka2'
+
+    },
+    actors: {
+
+    },
+    genres: [],
+    privat: false
+
+};
+
+personalMovieDB.movies.film1 = prompt('Какой фильм смотрели предпоследним?', '');
+personalMovieDB.movies.ocenka1 = prompt('Какую оценку поставите?', '');
+personalMovieDB.movies.film2 = prompt('Какой фильм смотрели последним?', '');
+personalMovieDB.movies.ocenka2 = prompt('Какую оценку поставите фильму?', '');
+
+console.log(personalMovieDB.movies.film1 + ' ' + 'Оценка:' + personalMovieDB.movies.ocenka1);
+console.log(personalMovieDB.movies.film2 + ' ' + 'Оценка:' + personalMovieDB.movies.ocenka2);
+console.log('Просмотренно' + ' ' + numberOfFilms + ' ' + 'фильмов');
+
+
+
+
+
